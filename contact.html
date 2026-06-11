@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Elite Pool Concepts</title>
+  <meta name="description" content="Request a free consultation for a residential fiberglass pool in South Florida. We'll visit your property and discuss your backyard vision.">
+  <meta property="og:title" content="Contact — Elite Pool Concepts">
+  <meta property="og:description" content="Request a free consultation. We'll visit your South Florida property and help you plan your perfect pool.">
+  <meta property="og:image" content="logo.png">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="Elite Pool Concepts"></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="pools.html">Pool Concepts</a>
+        <a href="process.html">Our Process</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-navy nav-cta">Request a Consultation</a>
+      </div>
+      <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label">Contact</p>
+      <h1>Let's Talk About Your Backyard</h1>
+      <p>Request a free consultation and we'll visit your property to review what's possible and provide a clear estimate.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="contact-section">
+      <div class="container contact-inner">
+        <div class="contact-info">
+          <h2>Get in touch</h2>
+          <p>Call or email to schedule a consultation, or submit the form and we'll reach out within 1 business day.</p>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div>
+              <strong>Phone</strong>
+              <span>(610) 316-6333</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div>
+              <strong>Email</strong>
+              <span>sales@elitepoolconcepts.com</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <strong>Service Area</strong>
+              <span>Miami-Dade · Broward · Palm Beach</span>
+            </div>
+          </div>
+        </div>
+
+        <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" class="contact-form">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first">First Name</label>
+              <input id="first" name="first" required>
+            </div>
+            <div class="form-group">
+              <label for="last">Last Name</label>
+              <input id="last" name="last">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="address">Street Address</label>
+              <input id="address" name="address">
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input id="city" name="city">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="county">County</label>
+              <select id="county" name="county">
+                <option>Miami-Dade</option>
+                <option>Broward</option>
+                <option>Palm Beach</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="interest">Pool interest</label>
+              <select id="interest" name="interest">
+                <option>New Pool Installation</option>
+                <option>Pool Renovation</option>
+                <option>Not Sure Yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="budget">Approximate budget</label>
+              <select id="budget" name="budget">
+                <option>Under $40k</option>
+                <option>$40k–$60k</option>
+                <option>$60k–$80k</option>
+                <option>$80k–$100k</option>
+                <option>$100k+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ref">How did you hear about us?</label>
+              <select id="ref" name="ref">
+                <option>Google</option>
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>Referral</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message / details</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-primary form-submit">Request My Free Consultation</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="logo.png" alt="Elite Pool Concepts" class="footer-logo" style="filter: brightness(0) invert(1);">
+          <p>Premium residential fiberglass pool installation. Serving homeowners who want quality, clarity, and a process they can trust.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pools.html">Pool Concepts</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Fiberglass Pool Installation</a></li>
+            <li><a href="#">Custom Pool Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>(610) 316-6333</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>sales@elitepoolconcepts.com</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Miami-Dade · Broward · Palm Beach</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Elite Pool Concepts. All rights reserved.</span>
+        <span>Premier Fiberglass Pools</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

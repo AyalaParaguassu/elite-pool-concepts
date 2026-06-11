@@ -1,0 +1,57 @@
+# Netlify configuration for Elite Pool Concepts
+
+[build]
+  # No build process needed for this static site
+  publish = "."
+  command = ""
+
+[context.production]
+  # Production build settings
+  command = ""
+
+[[redirects]]
+  # Redirect contact form submissions to thank you page
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  # Keep URLs clean — serve HTML files without .html extension
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    # Performance headers
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    # Cache images longer
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[functions]
+  # Optional: If you add serverless functions later
+  directory = "functions/"
+
+# Form settings
+[[forms]]
+  name = "contact"
+  honeypot = "bot-field"
